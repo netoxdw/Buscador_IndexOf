@@ -18,6 +18,13 @@ const filtrar = () => {
     // console.log(formulario.value);
     // Lo que el usuario escribe pasar a minusculas tolowerCase
     const texto = formulario.ariaValueMax.toLowerCase()
+    // recorrer todo el array productos
+    for(let i of productos){
+        let nombre = i.nombre.toLowerCase();
+        if (nombre.indexOf(texto) !== -1){
+            
+        }
+    }
 }
 
 // Evento al dar click buscar, se activa la funcion filtrar
