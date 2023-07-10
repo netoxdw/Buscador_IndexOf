@@ -3,7 +3,7 @@ const productos = [
     {nombre: 'Platanos', valor: '500'},
     {nombre: 'Pera', valor: '500'},
     {nombre: 'Sandia', valor: '500'},
-    {nombre: 'Melon', valor: '500'}
+    {nombre: 'Melon', valor: '500'},
 ] 
 
 
@@ -15,7 +15,9 @@ const boton = document.querySelector('#boton');
 
 // Funcion donde filtra a consola lo que el usuario busca
 const filtrar = () => {
-    console.log(formulario.value);
+    // console.log(formulario.value);
+    // Lo que el usuario escribe pasar a minusculas tolowerCase
+    const texto = formulario.ariaValueMax.toLowerCase()
 }
 
 // Evento al dar click buscar, se activa la funcion filtrar
